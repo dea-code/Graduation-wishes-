@@ -3,44 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selamat Wisuda!</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Ucapan Wisuda Aesthetic</title>
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap"
       rel="stylesheet"
     />
+
     <style>
       body {
         margin: 0;
+        background: #fdf9f5;
         font-family: "Poppins", sans-serif;
-        background: #f8f5ef;
-        color: #333;
+        color: #443c3c;
+        padding-bottom: 40px;
+      }
+
+      .container {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 20px;
         text-align: center;
       }
 
-      header {
-        padding: 60px 20px;
-        background: linear-gradient(135deg, #000000, #4d3a2f);
-        color: white;
-      }
-
-      h1 {
-        font-size: 42px;
+      .title {
+        font-family: "Playfair Display", serif;
+        font-size: 32px;
+        color: #d6a17a;
+        margin-top: 40px;
         margin-bottom: 10px;
       }
 
-      .gold {
-        color: #d4af37;
-        font-weight: 600;
+      .subtitle {
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: #b0978a;
+        margin-bottom: 35px;
       }
 
+      /* CARD AESTHETIC */
+      .card {
+        background: #ffffff;
+        padding: 32px;
+        border-radius: 18px;
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+        margin-bottom: 40px;
+        text-align: left;
+        line-height: 1.75;
+      }
+
+      .card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #d6a17a;
+      }
+
+      /* FOTO HERO AESTHETIC */
       .photo-frame {
-        margin: 30px auto;
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
+        width: 330px;
+        height: 330px;
+        border-radius: 22px;
         overflow: hidden;
-        border: 4px solid #d4af37;
+        margin: 0 auto;
+        border: 5px solid #e7d5c7;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
       }
 
       .photo-frame img {
@@ -49,78 +76,124 @@
         object-fit: cover;
       }
 
-      .card {
-        margin: 30px auto;
-        max-width: 700px;
-        background: white;
-        padding: 25px;
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      figcaption {
+        margin-top: 12px;
+        font-size: 15px;
+        color: #6a5c54;
       }
 
-      footer {
-        margin-top: 40px;
-        padding: 15px;
-        background: #000;
-        color: white;
-        font-size: 14px;
+      /* GALLERY FOTO */
+      .gallery {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 25px;
       }
 
-      /* Confetti Animation */
-      .confetti {
-        position: fixed;
-        top: 0;
-        left: 0;
+      .gallery-item {
+        width: 250px;
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 3px solid #f1e6df;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+        text-align: left;
+      }
+
+      .gallery-item img {
         width: 100%;
-        height: 100%;
-        pointer-events: none;
+        height: 170px;
+        object-fit: cover;
+      }
+
+      .gallery-caption {
+        padding: 12px;
+        font-size: 14px;
+        color: #5b514c;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 600px) {
+        .photo-frame {
+          width: 250px;
+          height: 250px;
+        }
+        .gallery-item {
+          width: 100%;
+          max-width: 300px;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="confetti" id="confetti"></div>
+    <div class="container">
+      <h1 class="title">Periodt! Congrats on your grad!🎓✨</h1>
+      <div class="subtitle">the sweetest chapter is finally here ✨</div>
 
-    <header>
-      <h1>
-        🎓 Selamat Wisuda <span class="gold" id="namaTujuan">Nama Kamu</span>!
-      </h1>
-      <p>Hari ini adalah awal perjalanan baru. Bangga dengan pencapaianmu!</p>
-    </header>
+      <!-- ============================ -->
+      <!--   SURAT PERSONAL AESTHETIC   -->
+      <!-- ============================ -->
+      <section class="card">
+        <h2>Untuk, SHINTA DEWI LESTARI TULUS, S.Psi.</h2>
 
-    <div class="photo-frame">
-      <img src="https://i.ibb.co/5GzXkwq/person.jpg" alt="Foto Wisuda" />
+        <p>
+          Selamat wisuda! 🌸 Bukan cuma tentang toga dan ijazah, tapi tentang
+          semua perjalanan panjang yang akhirnya terbayar.
+        </p>
+
+        <p>
+          This year, all your hard work finally paid off. Take a moment to look
+          back at your journey — it’s crazy how far you’ve come. And your
+          future? It’s already glowing so bright. Keep shining. 💛
+        </p>
+
+        <p>
+          Kamu layak mendapatkan semua kebahagiaan hari ini.<br />
+          <strong>With love, yang gemoy gemoy aja</strong>
+        </p>
+      </section>
+
+      <!-- ============================ -->
+      <!--         FOTO HERO           -->
+      <!-- ============================ -->
+      <section>
+        <figure>
+          <div class="photo-frame">
+            <img src="IMG_0759.jpg" alt="Foto wisuda [NAMA]" />
+          </div>
+          <figcaption>
+            <strong>Shinta</strong> — Wisuda Psikologi, <em>UBP</em><br />
+            <small>[22 november 2025]</small><br />
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- ============================ -->
+      <!--        GALLERY FOTO          -->
+      <!-- ============================ -->
+      <section class="gallery">
+        <div class="gallery-item">
+          <img src="IMG_0756.jpg" alt="Foto 1 [NAMA]" />
+          <div class="gallery-caption">
+            <strong>SHINTA DEWI LESTARI TULUS, S.psi.</strong><br />
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="IMG_0754.jpg" alt="Foto 2 [NAMA]" />
+          <div class="gallery-caption">
+            <strong>SHINTA DEWI LESTARI TULUS, S.psi.</strong><br />
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="IMG_0753.jpg" alt="Foto 3 [NAMA]" />
+          <div class="gallery-caption">
+            <strong>SHINTA DEWI LESTARI TULUS, S.psi.</strong><br />
+          </div>
+        </div>
+      </section>
     </div>
-
-    <div class="card">
-      <h2 class="gold">Ucapan Spesial</h2>
-      <p id="ucapanTeks">
-        Selamat atas kelulusanmu! Semoga ilmu yang telah kamu dapatkan menjadi
-        bekal berharga untuk masa depanmu. Teruslah melangkah, dan jangan
-        berhenti bermimpi.
-      </p>
-    </div>
-
-    <footer>© 2025 • Graduation Greeting Page</footer>
-
-    <script>
-      // CONFETTI ANIMATION
-      function createConfetti() {
-        for (let i = 0; i < 60; i++) {
-          let confetti = document.createElement("div");
-          confetti.style.position = "absolute";
-          confetti.style.width = "8px";
-          confetti.style.height = "8px";
-          confetti.style.background = i % 2 === 0 ? "#d4af37" : "#ffffff";
-          confetti.style.top = "-20px";
-          confetti.style.left = Math.random() * window.innerWidth + "px";
-          confetti.style.opacity = Math.random();
-          confetti.style.transform = "rotate(" + Math.random() * 360 + "deg)";
-          confetti.style.animation = "fall 3s linear infinite";
-          document.getElementById("confetti").appendChild(confetti);
-        }
-      }
-
-      createConfetti();
-    </script>
   </body>
 </html>

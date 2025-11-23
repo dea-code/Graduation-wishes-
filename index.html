@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selamat Wisuda!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: #f8f5ef;
+        color: #333;
+        text-align: center;
+      }
+
+      header {
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #000000, #4d3a2f);
+        color: white;
+      }
+
+      h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+      }
+
+      .gold {
+        color: #d4af37;
+        font-weight: 600;
+      }
+
+      .photo-frame {
+        margin: 30px auto;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid #d4af37;
+      }
+
+      .photo-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .card {
+        margin: 30px auto;
+        max-width: 700px;
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      footer {
+        margin-top: 40px;
+        padding: 15px;
+        background: #000;
+        color: white;
+        font-size: 14px;
+      }
+
+      /* Confetti Animation */
+      .confetti {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="confetti" id="confetti"></div>
+
+    <header>
+      <h1>
+        🎓 Selamat Wisuda <span class="gold" id="namaTujuan">Nama Kamu</span>!
+      </h1>
+      <p>Hari ini adalah awal perjalanan baru. Bangga dengan pencapaianmu!</p>
+    </header>
+
+    <div class="photo-frame">
+      <img src="https://i.ibb.co/5GzXkwq/person.jpg" alt="Foto Wisuda" />
+    </div>
+
+    <div class="card">
+      <h2 class="gold">Ucapan Spesial</h2>
+      <p id="ucapanTeks">
+        Selamat atas kelulusanmu! Semoga ilmu yang telah kamu dapatkan menjadi
+        bekal berharga untuk masa depanmu. Teruslah melangkah, dan jangan
+        berhenti bermimpi.
+      </p>
+    </div>
+
+    <footer>© 2025 • Graduation Greeting Page</footer>
+
+    <script>
+      // CONFETTI ANIMATION
+      function createConfetti() {
+        for (let i = 0; i < 60; i++) {
+          let confetti = document.createElement("div");
+          confetti.style.position = "absolute";
+          confetti.style.width = "8px";
+          confetti.style.height = "8px";
+          confetti.style.background = i % 2 === 0 ? "#d4af37" : "#ffffff";
+          confetti.style.top = "-20px";
+          confetti.style.left = Math.random() * window.innerWidth + "px";
+          confetti.style.opacity = Math.random();
+          confetti.style.transform = "rotate(" + Math.random() * 360 + "deg)";
+          confetti.style.animation = "fall 3s linear infinite";
+          document.getElementById("confetti").appendChild(confetti);
+        }
+      }
+
+      createConfetti();
+    </script>
+  </body>
+</html>
